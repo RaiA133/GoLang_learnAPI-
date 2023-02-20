@@ -8,7 +8,7 @@ import (
 
 type JSONListMahasiswa struct {
 	ID      int    `json:"id"`
-	Nim     int    `json:"nim"`
+	Nim     string `json:"nim"`
 	Nama    string `json:"nama"`
 	Email   string `json:"email"`
 	Jurusan string `json:"jurusan"`

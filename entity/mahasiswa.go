@@ -2,7 +2,7 @@ package entity
 
 type Mahasiswa struct {
 	id      int
-	nim     int
+	nim     string
 	nama    string
 	email   string
 	jurusan string
@@ -10,7 +10,7 @@ type Mahasiswa struct {
 
 type MahasiswaDTO struct {
 	ID      int
-	Nim     int
+	Nim     string
 	Nama    string
 	Email   string
 	Jurusan string
@@ -31,7 +31,7 @@ func (b *Mahasiswa) GetID() int {
 	return b.id
 }
 
-func (b *Mahasiswa) GetNim() int {
+func (b *Mahasiswa) GetNim() string {
 	return b.nim
 }
 
