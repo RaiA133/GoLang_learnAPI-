@@ -10,3 +10,6 @@ Membuat API dengan http Method GET & POST menghasilkan Data JSON dengan implemat
 
 # CATATAN :
 - Nama DB : salt_tugas
+
+# LINK GITHUB
+https://github.com/RaiA133/GoLang_learnAPI-
