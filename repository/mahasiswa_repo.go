@@ -10,6 +10,8 @@ import (
 type mahasiswaModel struct {
 }
 
+// 		METHOD GET 		//
+
 func GetDataMahasiswa() ([]*entity.Mahasiswa, error) {
 	db, err := config.MySQLConnection()
 	if err != nil {
@@ -32,6 +34,8 @@ func GetDataMahasiswa() ([]*entity.Mahasiswa, error) {
 	}
 	return mapper.MapToEntity(result), nil
 }
+
+// 		METHOD POST		//
 
 func PostDataMahasiswa(w http.ResponseWriter, r *http.Request) {
 	db, _ := config.MySQLConnection()
